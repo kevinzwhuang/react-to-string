@@ -1,5 +1,5 @@
 import React from 'react';
-import reactToString from './react-to-string';
+import reactToString from './src/react-to-string';
 
 test('Returns the original string if the element is a string', () => {
   const testString = 'This is a string';
