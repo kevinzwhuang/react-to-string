@@ -63,6 +63,13 @@ reactToString(<p>Are you interested in this library? <a href="signup">Click here
 // Returns "Are you interested in this library? Click here!"
 ```
 
+Note: This example uses ES6 syntax, if you are using ES5 `require` syntax, make sure
+to require react-to-string as a ES6 module like so:
+
+```es5
+var reactToString = require('react-to-string').default
+```
+
 ## API
 
 `reactToString(element: React element || String || Array (Strings or ReactElements)) : Function => String`
