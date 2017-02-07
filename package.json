@@ -1,4 +1,13 @@
 {
+  "name": "react-to-string",
+  "version": "0.0.1",
+  "description": "Convert React elements to strings",
+  "author": "Kevin Huang <kevin.ziwen.huang@gmail.com>",
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "main": "dist/react-to-string.js",
   "devDependencies": {
     "babel-core": "^6.22.1",
     "babel-jest": "^18.0.0",
