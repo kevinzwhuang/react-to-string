@@ -30,3 +30,8 @@ test('Returns only the string children of an element with mixed children (React 
   )
   expect(reactToString(testElement)).toBe('Welcome to reactToString. Click here to sign up');
 });
+
+test('Returns an empty string if element has no children', () => {
+  const testElement = <br />
+  expect(reactToString(testElement)).toBe('');
+});
