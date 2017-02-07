@@ -2,12 +2,17 @@ const reactToString = element => {
   if (typeof element === 'string') {
     return element;
   }
-  const children = element.props.children;
-  if (typeof children === 'string') {
-    return children;
+
+  if (Array.isArray(element)) {
+    return element.map(subElement => reactToString(subElement)).join('');
   }
-  if (Array.isArray(children)) {
-    return children.map(grandchild => reactToString(grandchild)).join('');
+
+  if (element.props && element.props.children) {
+    return reactToString(element.props.children);
+  }
+
+  if (element.props && !element.props.children) {
+    return '';
   }
 }
 
