@@ -1,5 +1,6 @@
 {
   "devDependencies": {
+    "babel-jest": "^18.0.0",
     "jest": "^18.1.0"
   }
 }
