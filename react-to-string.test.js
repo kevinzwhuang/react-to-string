@@ -19,3 +19,14 @@ test('Returns only the string children of an element with several children', () 
   )
   expect(reactToString(testElement)).toBe('Welcome to reactToString. Click here to sign up');
 });
+
+test('Returns only the string children of an element with mixed children (React elements & strings)', () => {
+  const testElement = (
+    <div>
+      <p>
+        Welcome to <a href="/about">reactToString</a>. <a href="/sign_up">Click here to sign up</a>
+      </p>
+    </div>
+  )
+  expect(reactToString(testElement)).toBe('Welcome to reactToString. Click here to sign up');
+});
