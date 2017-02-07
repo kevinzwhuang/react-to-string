@@ -1,4 +1,4 @@
-React-To-String [![TravisCI status](https://travis-ci.org/kevinzwhuang/react-to-string.svg?branch=master)](https://travis-ci.org/kevinzwhuang/react-to-string)[![CircleCI](https://circleci.com/gh/kevinzwhuang/react-to-string/tree/master.svg?style=svg)](https://circleci.com/gh/kevinzwhuang/react-to-string/tree/master)
+React-To-String [![TravisCI status](https://travis-ci.org/kevinzwhuang/react-to-string.svg?branch=master)](https://travis-ci.org/kevinzwhuang/react-to-string) [![CircleCI](https://circleci.com/gh/kevinzwhuang/react-to-string/tree/master.svg?style=shield)](https://circleci.com/gh/kevinzwhuang/react-to-string/tree/master)
 ===============
 
 Convert React elements to strings 👌
