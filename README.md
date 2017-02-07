@@ -77,3 +77,8 @@ To develop React-To-String locally:
 1. Clone this repo and `cd` into the newly cloned folder.
 2. Install dev dependencies by running `npm install` or `yarn`Run `npm test` or `yarn test` to run the test suite.
 3. Run `npm test` or `yarn test` to run the test suite.
+
+## Looking for server-side rendering or string output with HTML tags?
+
+React-To-String won't be able to do that for you, but you can find more about
+server-side rendering or string output with HTML tags (static markup)  with React at the official docs here: [https://facebook.github.io/react/docs/react-dom-server.html](https://facebook.github.io/react/docs/react-dom-server.html)
