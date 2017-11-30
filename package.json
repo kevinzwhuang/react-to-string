@@ -1,6 +1,6 @@
 {
   "name": "react-to-string",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Convert React elements to strings",
   "author": "Kevin Huang <kevin.ziwen.huang@gmail.com>",
   "files": [
