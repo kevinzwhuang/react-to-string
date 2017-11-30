@@ -1,5 +1,5 @@
 const reactToString = element => {
-  if (typeof element === 'string') {
+  if (typeof element === 'string' || element === null) {
     return element;
   }
 
