@@ -6,6 +6,11 @@ test('Returns the original string if the element is a string', () => {
   expect(reactToString(testString)).toBe(testString);
 });
 
+test('Returns the null element if the element is null', () => {
+  const nullElement = null;
+  expect(reactToString(nullElement)).toBe(nullElement);
+})
+
 test('Returns the string child of an element that only has one child', () => {
   const testElement = <div>This is a test string</div>
   expect(reactToString(testElement)).toBe('This is a test string');
