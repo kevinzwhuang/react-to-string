@@ -1,6 +1,14 @@
 const reactToString = element => {
-  if (typeof element === 'string' || element === null) {
+  if (!element) {
+    return '';
+  }
+
+  if (typeof element === 'string') {
     return element;
+  }
+
+  if (typeof element === 'number') {
+    return String(element);
   }
 
   if (Array.isArray(element)) {
@@ -14,6 +22,8 @@ const reactToString = element => {
   if (element.props && !element.props.children) {
     return '';
   }
+
+  return '';
 }
 
 export default reactToString;
