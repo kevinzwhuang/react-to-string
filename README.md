@@ -76,6 +76,8 @@ var reactToString = require('react-to-string').default
 
 Takes in a React element and traverses its children to return a pure string.
 
+Note: react-to-string *always* returns a string. If an `undefined` or some other unknown object is passed is provided as an argument, react-to-string will return an *empty string*.
+
 ## Development
 
 React-To-String uses [jest](https://github.com/facebook/jest) to handle tests.
