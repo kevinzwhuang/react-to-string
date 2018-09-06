@@ -7,8 +7,11 @@ test('Returns the original string if the element is a string', () => {
 });
 
 test('Returns the null element if the element is null', () => {
-  const nullElement = null;
-  expect(reactToString(nullElement)).toBe(nullElement);
+  expect(reactToString(null)).toBe('');
+})
+
+test('Returns the empty string if the element is not passed', () => {
+  expect(reactToString()).toBe('');
 })
 
 test('Returns the string child of an element that only has one child', () => {
@@ -39,4 +42,12 @@ test('Returns only the string children of an element with mixed children (React 
 test('Returns an empty string if element has no children', () => {
   const testElement = <br />
   expect(reactToString(testElement)).toBe('');
+});
+
+test('Returns an string if element is number', () => {
+  expect(reactToString(42)).toBe('42');
+});
+
+test('Returns an empty string if element is unprocessable object', () => {
+  expect(reactToString({ foo: 'bar' })).toBe('');
 });
